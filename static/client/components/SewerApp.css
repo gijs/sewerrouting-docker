@@ -1,0 +1,9 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #3e5360;
+}
+html, body, #map, .wrapper, .mapwrapper, .Map {
+    height: 100%;
+}

@@ -1,0 +1,8 @@
+web:
+  extends:
+    file: docker-compose.yml
+    service: web
+  ports:
+  - "127.0.0.1:8000:8000"
+  environment:
+  - VIRTUAL_HOST=sewerrouting.sandbox.lizard.net

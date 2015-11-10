@@ -1,0 +1,81 @@
+{
+  "bounds": [
+    51.7,
+    4.2,
+    52.5,
+    5.4
+  ],
+  "center": [
+    52.5032,
+    4.9615,
+    5
+  ],
+  "format": "png8",
+  "interactivity": true,
+  "minzoom": 0,
+  "maxzoom": 22,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "map.mss",
+    "surface.mss",
+    "structures.mss",
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "linestring",
+      "extent": [
+        4.35312885431273,
+        51.8985951762974,
+        5.33841398372035,
+        52.4299411400467
+      ],
+      "Datasource": {
+        "type": "sqlite",
+        "file": "../../data/purmerend_big2.sqlite",
+        "key_field": "id",
+        "geometry_field": "the_geom",
+        "table": "sewerage_pipe_view",
+        "id": "pipe",
+        "project": "lizardnxt",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "id": "pipe",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "pipe"
+    },
+    {
+      "geometry": "Point",
+      "extent": [
+        4.35312885431273,
+        51.8985951762974,
+        5.33841398372035,
+        52.4299411400467
+      ],
+      "Datasource": {
+        "type": "sqlite",
+        "file": "../../data/purmerend_big2.sqlite",
+        "key_field": "id",
+        "geometry_field": "the_geom",
+        "table": "sewerage_manhole",
+        "id": "manhole",
+        "project": "lizardnxt",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      },
+      "id": "manhole",
+      "class": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "manhole"
+    }
+  ],
+  "scale": 2,
+  "metatile": 4,
+  "name": "lizardnxt",
+  "description": "Sewer tiles",
+  "attribution": "Nelen & Schuurmans"
+}
